@@ -158,4 +158,17 @@ Button Styles
     color:#4A4A4A;
     padding: 10px 0;
   }
-  
+
+  .social-icons a {
+    display: inline-block;
+    margin-right: 10px; /* Pasirinktinai: padidina atstumą tarp ikonų */
+}
+
+.social-icons img {
+    width: 30px; /* Pasirinktinai: nustato ikonų dydį */
+    height: 30px; /* Pasirinktinai: nustato ikonų dydį */
+}
+
+.social-icons a:hover img {
+    filter: brightness(0); /* Keičia spalvą į baltą */
+}
