@@ -1,4 +1,76 @@
 html, body {
     font-family: "Cantarell", sans-serif;
     background-color: #888DF2;
+    margin: 0;
+    padding: 0;
 }
+
+/*
+Header
+*/
+
+#header {
+    width: 1200px;
+    margin: 0 auto;
+    color: #88D0F2;
+    padding: 10px 0;
+}
+
+.logo {
+    width: 30%;
+    float: left;
+    padding: 1em 0;
+}
+
+.logo h1, .logo p {
+margin: 0;
+padding: 0;
+width: 70%;
+}
+
+.logo h1 {
+    text-transform: uppercase;
+    letter-spacing: 0.20em;
+}
+
+.navigation {
+    float: right;
+    text-align: right;
+    padding-top: 1em;
+    width: 70%;
+}
+
+.navigation a {
+padding: 0.5em 1em;
+text-decoration: none;
+letter-spacing: 0.10em;
+}
+
+.navigation a:hover {
+    color: #888DF2;
+}
+
+/*
+INTRO
+*/
+
+#intro {
+    height: 700px;
+    background-image: url(../img/bg-img2.jpg);
+    background-size: cover;
+    background-position: center;
+    clear: both;
+}
+
+/*
+Stilius skirtas mygtukams
+*/
+
+.btn-default {
+    border: 1px solid #88D0F2;
+}
+
+.btn-default:hover {
+    background-color: #88D0F2;
+    color: #ffff;
+    }
