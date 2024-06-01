@@ -91,11 +91,11 @@ Button Styles
 */
 
 .btn-default {
-    border: 1px solid #006400; /* Dark green border for the button */
+    border: 1px solid #4A4A4A; 
 }
 
 .btn-default:hover {
-    background-color: #88D0F2;
+    background-color: #4A4A4A;
     color: #fff;
 }
 
@@ -122,6 +122,30 @@ Button Styles
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: #A9FF7A; /* White-green color */
+    background-color: #4A4A4A; 
     z-index: -1;
 }
+#map-statistics {
+    text-align: center;
+    padding-top: 2em;
+    clear: both;
+    color: #4A4A4A
+  }
+  h3 {
+    font-size: 2em;
+    margin-bottom: 0em;
+  }
+  
+  .iframe-map iframe {
+    width: 100%;
+    height: 800px;
+    border: 0;
+  }
+  
+  #footer {
+    width: 1200px;
+    margin: 0 auto;
+    color:#4A4A4A;
+    padding: 10px 0;
+  }
+  
