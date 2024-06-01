@@ -1,0 +1,127 @@
+html, body {
+    font-family: "Cantarell", sans-serif;
+    background-color: #E6F7FF; /* Updated background color */
+    margin: 0;
+    padding: 0;
+}
+
+/*
+Header
+*/
+
+#header {
+    width: 100%;
+    margin: 0 auto;
+    color: #88D0F2;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.logo {
+    width: 100%;
+    padding: 1em 0;
+}
+
+.logo h1, .logo p {
+    margin: 0;
+    padding: 0;
+}
+
+.logo h1 {
+    text-transform: uppercase;
+    letter-spacing: 0.20em;
+    color: #4A4A4A; /* Pleasant color for the text */
+    font-size: 2.5em; /* Larger font size for "Druskininkai" */
+}
+
+.logo p {
+    color: #4A4A4A; /* Pleasant color for the text */
+}
+
+.navigation {
+    text-align: center;
+    padding-top: 1em;
+    width: 100%;
+    margin-bottom: 2em; /* Larger space between buttons and image */
+}
+
+.navigation a {
+    padding: 0.5em 1em;
+    text-decoration: none;
+    letter-spacing: 0.10em;
+    color: #4A4A4A; /* Pleasant color for the text */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+.navigation a:hover {
+    color: #000; /* Change color to black on hover */
+    background-color: #88D0F2; /* Change background color on hover */
+}
+
+/*
+INTRO
+*/
+
+#intro {
+    height: 100vh; /* Išsaugoti ekrano aukštį */
+    background-image: url(../img/druskininkai2.jpg);
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    position: relative;
+}
+
+#intro p {
+    color: #000;
+    max-width: 800px;
+    margin: auto; /* Centruoti horizontaliai */
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.5);
+    font-size: 1.2em;
+    position: absolute; 
+    top: 40%; /* Perkelia teksto viršutinį kraštą į 50% ekrano aukščio */
+    left: 50%; /* Perkelia teksto kairį kraštą į 50% ekrano pločio */
+    transform: translate(-50%, -50%); /* Perkelia teksto centrą į centrinį ekrano tašką */
+}
+
+
+
+/*
+Button Styles
+*/
+
+.btn-default {
+    border: 1px solid #006400; /* Dark green border for the button */
+}
+
+.btn-default:hover {
+    background-color: #88D0F2;
+    color: #fff;
+}
+
+.intro-icon {
+    height: 1.5em;
+    width: 1.5em;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+#header, .logo h1, .logo p, .navigation a {
+    animation: fadeIn 2s ease-in;
+}
+
+/* White-green rectangle on hover for "Pranešk" */
+.btn-default:hover::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #A9FF7A; /* White-green color */
+    z-index: -1;
+}
